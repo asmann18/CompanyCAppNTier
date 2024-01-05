@@ -17,26 +17,7 @@ Console.Clear();
 
 Helper.ChangeTextColor(ConsoleColor.Green, "Welcome \n");
 restart:
-//_printMenu();
-Helper.ChangeTextColor(ConsoleColor.Yellow, "\n1- CreateDepartment");
-Helper.ChangeTextColor(ConsoleColor.Yellow, "2- UpdateDepartment");
-Helper.ChangeTextColor(ConsoleColor.Yellow, "3- DeleteDepartment");
-Helper.ChangeTextColor(ConsoleColor.Yellow, "4- GetDepartmentById");
-Helper.ChangeTextColor(ConsoleColor.Yellow, "5- Search Department");
-Helper.ChangeTextColor(ConsoleColor.Yellow, "6- GetEmployeeByDepartment");
-Helper.ChangeTextColor(ConsoleColor.Yellow, "7- GetAllDepartments \n");
-
-Helper.ChangeTextColor(ConsoleColor.Cyan, "8- CreateEmployee");
-Helper.ChangeTextColor(ConsoleColor.Cyan, "9- UpdateEmployee");
-Helper.ChangeTextColor(ConsoleColor.Cyan, "10- DeleteEmployee");
-//Helper.ChangeTextColor(ConsoleColor.Cyan, "11- GetEmployeeByAge  ------------");
-Helper.ChangeTextColor(ConsoleColor.Cyan, "11- GetEmployeeById");
-Helper.ChangeTextColor(ConsoleColor.Cyan, "12- GetEmployeeByAdress");
-Helper.ChangeTextColor(ConsoleColor.Cyan, "13- SearchEmployee");
-Helper.ChangeTextColor(ConsoleColor.Cyan, "14- GetAllEmployee");
-
-Helper.ChangeTextColor(ConsoleColor.Red, "\n15- ExitProgram \n");
-
+_printMenu();
 string menu = Console.ReadLine();
 switch (menu)
 {
@@ -378,22 +359,23 @@ static Employee _selectEmployee(EmployeeService employeeService)
 
 static void _printMenu()
 {
+
     Helper.ChangeTextColor(ConsoleColor.Yellow, "\n1- CreateDepartment");
     Helper.ChangeTextColor(ConsoleColor.Yellow, "2- UpdateDepartment");
     Helper.ChangeTextColor(ConsoleColor.Yellow, "3- DeleteDepartment");
     Helper.ChangeTextColor(ConsoleColor.Yellow, "4- GetDepartmentById");
     Helper.ChangeTextColor(ConsoleColor.Yellow, "5- Search Department");
-    Helper.ChangeTextColor(ConsoleColor.Yellow, "6- GetAllDepartmentsByCapacity  ---------");
+    Helper.ChangeTextColor(ConsoleColor.Yellow, "6- GetEmployeeByDepartment");
     Helper.ChangeTextColor(ConsoleColor.Yellow, "7- GetAllDepartments \n");
 
     Helper.ChangeTextColor(ConsoleColor.Cyan, "8- CreateEmployee");
     Helper.ChangeTextColor(ConsoleColor.Cyan, "9- UpdateEmployee");
     Helper.ChangeTextColor(ConsoleColor.Cyan, "10- DeleteEmployee");
-    Helper.ChangeTextColor(ConsoleColor.Cyan, "11- GetEmployeeByAge  ------------");
-    Helper.ChangeTextColor(ConsoleColor.Cyan, "12- GetEmployeeByID");
+    Helper.ChangeTextColor(ConsoleColor.Cyan, "11- GetEmployeeById");
+    Helper.ChangeTextColor(ConsoleColor.Cyan, "12- GetEmployeeByAdress");
     Helper.ChangeTextColor(ConsoleColor.Cyan, "13- SearchEmployee");
-    Helper.ChangeTextColor(ConsoleColor.Cyan, "14- GetEmployeeByDepartmentID");
-    Helper.ChangeTextColor(ConsoleColor.Cyan, "15- GetALlEmployee");
+    Helper.ChangeTextColor(ConsoleColor.Cyan, "14- GetAllEmployee");
 
-    Helper.ChangeTextColor(ConsoleColor.Red, "\n16- ExitProgram \n");
+    Helper.ChangeTextColor(ConsoleColor.Red, "\n15- ExitProgram \n");
+
 }
